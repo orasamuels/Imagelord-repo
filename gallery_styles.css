@@ -1,0 +1,197 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+   background: radial-gradient(circle at center, #f9d423, #f83600);
+
+
+
+    font-family: serif;
+}
+
+h2{
+  font-size: clamp(1rem, 5vw, 3rem);
+  font-weight: 600;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 0 35px;
+  animation: 15s ease-in-out 1s 10 forwards titleanimation;
+}
+
+@keyframes ttleanimation {
+  0%   { background-color:  rgba(226, 159, 15, 0.582); }
+  16%  { background-color:  red; }   /* hold slide 1 */
+  20%  { background-color:  orange; }
+  36%  { background-color:  yellow; } /* hold slide 2 */
+  40%  { background-color:  green; }
+  56%  { background-color:  blue; } /* hold slide 3 */
+  60%  { background-color:  indigo; }
+  76%  { background-color:  violet; } /* hold slide 4 */
+  80%  { background-color:  goldenrod; }
+  100% { background-color:  gold; } /* hold slide 5 */
+}
+
+a{
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  font-size: 20px;
+  border: 2px solid goldenrod;
+  text-decoration: none;
+  padding: 10px 30px;
+  border-radius: 10px;
+  background-color: rgba(226, 159, 15, 0.582);
+  transition: 0.6s;
+}
+
+a:any-link{
+  color: #000;
+}
+
+a:hover{
+  transform: scale(1.1);
+  background-color: gold;
+  text-decoration: none;
+}
+
+header{
+    font-size: clamp(1.5rem, 5vw, 3.2rem);
+    text-align: center;
+    font-weight: 600;
+    padding: 15px;
+}
+
+/* CAROUSEL SLIDE ONE */
+
+.carousel {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  margin: 40px auto;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.slides {
+  display: flex;
+  /* don't set width here — let flex items define layout */
+  animation: slideAnimation 25s infinite;
+  /* optional: ease timing for smoother motion */
+}
+
+.slides li {
+  list-style: none;
+  min-width: 100%;   /* each slide takes full carousel viewport */
+  /* bx-sizing: border-box; */
+}
+
+.slides img {
+  width: 100%;
+  display: block;
+  /* bject-fit: cover;
+  obect-position: top center; */
+  height: 500px; /* adjust as needed or use aspect ratio */
+}
+
+/* Keyframes for 5 slides:
+   Each translate step moves by 100% of the carousel width.
+   Percent ranges control how long each slide stays visible vs transition moment. */
+@keyframes slideAnimation {
+  0%   { transform: translateX(0%); }
+  16%  { transform: translateX(0%); }   /* hold slide 1 */
+  20%  { transform: translateX(-100%); }
+  36%  { transform: translateX(-100%); } /* hold slide 2 */
+  40%  { transform: translateX(-200%); }
+  56%  { transform: translateX(-200%); } /* hold slide 3 */
+  60%  { transform: translateX(-300%); }
+  76%  { transform: translateX(-300%); } /* hold slide 4 */
+  80%  { transform: translateX(-400%); }
+  100% { transform: translateX(-400%); } /* hold slide 5 */
+}
+
+
+.slide {
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  height: 500px;
+  object-fit: cover;
+  object-position: top;
+}
+
+/* PRE-WEDDING SECTION */
+
+.fade-carousel {
+  position: relative;
+  width: 80%;
+  max-width: 900px;
+  height: 500px;       /* Choose desired carousel height */
+  margin: 40px auto;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+/* All slides stacked on top of each other */
+.fade-slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  animation: fadeAnimation 25s infinite;
+}
+
+/* Images fill nicely and stay centered */
+.fade-slide img {
+  width: 100%;
+  height: 100%;
+  /* objet-fit: cover;
+  obect-position: top; */
+}
+
+/* Fade animation timing for each slide */
+.fade-slide:nth-child(1) { animation-delay: 0s; }
+.fade-slide:nth-child(2) { animation-delay: 5s; }
+.fade-slide:nth-child(3) { animation-delay: 10s; }
+.fade-slide:nth-child(4) { animation-delay: 15s; }
+.fade-slide:nth-child(5) { animation-delay: 20s; }
+.fade-slide:nth-child(6) { animation-delay: 25s; }
+
+/* Animation Keyframes */
+@keyframes fadeAnimation {
+  0%   { opacity: 0; }
+  10%  { opacity: 1; }
+  30%  { opacity: 1; }
+  40%  { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+.carousel-control-prev,
+ .carousel-control-next{
+  background-color: transparent;
+  border: none;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover{
+  background-color: transparent;
+}
+
+/* .fade-carousel {
+  animation-play-state: paused; /* Stop animation by default */
+/* }
+
+.fade-carousel.active {
+  animation-play-state: running; /* Start animation when visible */
+
+
+ .foot p{
+   text-align: center;
+   background-color: #333;
+   padding: 10px;
+   color: #bbb;
+   font-size: 13px;
+   letter-spacing: 3px;
+}
+

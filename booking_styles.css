@@ -1,0 +1,179 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(images2/camera.jpg);
+    background-size: cover;
+    background-position: center;
+    opcity: 0.5;
+    
+}
+
+h1{
+    text-align: center;
+    font-size: 3rem;
+    padding: 10px;
+    font-weight: 600;
+    color: rgb(226, 188, 93);
+      
+    background-image: url(images2/service-bg.jpg);
+    background-position: center;
+    -webkit-background-clip: text;
+    background-clip: text;
+
+}
+
+/* #booking{ */
+    /* width: 100%;
+    max-width: 900px;
+    heiht: 120vh;
+    margin: 40px auto;
+    border-radius: 15px;
+    background-image: linear-gradient(rgba(226, 159, 15, 0.582), #bbb); */
+
+  /* width: 70%;
+  max-width: 700px;        /* prevents it from getting too large on desktop */
+  /* margin: 40px auto;
+  
+  min-height: 100vh;       /* allow height to grow instead of forcing */
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box; */ 
+
+/* } */
+
+.details input{
+    /* display: blok;
+    width: 70%;
+    max-width: 90%;
+    margin: 20px 120px;
+    padding: 18px;
+    border-radius: 10px;
+    outline: 0;
+    border: 0;
+    background-color: #585555;
+    color: #fff;
+    font-size: 18px; */
+  width: 100%;
+  /* max-width: 100%; */
+  padding: 12px;
+  /* box-sizing: border-box;  */
+  border-radius: 10px; 
+  outline: 0;
+    border-bottom: 1.5px solid #bbb;
+    background-color: #333;
+    color: #fff;
+    margin-bottom: 20px; /* prevents overflow */
+}
+
+
+.labs{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 15px;
+    margin: 15px 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: rgb(226, 188, 93);
+}
+
+.inps{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 15px;
+    flex-wrap: nowrap;
+    margin: 20px 0;
+     /* width: 100%;
+  max-width: 100%;
+  box-sizing: border-box; */
+}
+
+.inps input, #duration-time, select{
+    padding: 6px;
+    border: 1.5px solid #333;
+    background-color: #bbb;
+    border-radius: 5px;
+     width: 100%;
+  /* max-width: 100%;
+  box-sizing: border-box; */
+}
+
+ 
+
+#booking {
+  width: 90%;
+  max-width: 600px; /* keeps layout from stretching too wide on large screens */
+  margin: 20px auto;
+  padding: 20px;
+  /* box-siing: border-box; */
+  height: auto; /* instead of 100vh */
+  /* overflow-x: hidden; prevents horizontal scroll */
+  background-color: #333;
+  opacity: 0.6;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(212, 79, 79, 0.3);
+
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* space between form elements */
+}
+
+/* input,
+select {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box; ensures padding doesn't overflow width
+} */
+
+
+summary{
+  margin-top: 20px;
+  color: bisque;
+  letter-spacing: 2px;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+.check, span, button{
+  margin-top: 25px;
+}
+
+span{
+  margin-left: 10px;
+  color: bisque;
+  font-size: 14px;
+}
+
+button{
+  font-size: 20px;
+  padding: 5px 10px;
+  background-color: rgb(212, 192, 141);
+  transition: 0.6s;
+  border-radius: 5px;
+}
+
+button:hover{
+  color: bisque;
+  background-color: #504d4d;
+  transform: translate(10px);
+}
+
+footer{
+    background-color: #222;
+    width: var(--WIDTH);
+    text-align: center;
+    color: #9b8f8f;
+    padding: 10px;
+    font-size: 13px;
+    letter-spacing: 3px;
+}

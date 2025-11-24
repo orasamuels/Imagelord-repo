@@ -315,6 +315,7 @@ h1 span:hover::after{
 
 #contact{
     background-color: #333;
+    opacity: 0.8;
 }
 
 #contact h2{
@@ -425,12 +426,12 @@ footer{
 @keyframes titlecolors {
     0%{
         color: #fff;
-        transform: translateY(-50px);
+        transform: translateY(-35px);
         transform: scale(1.1)
     }
     30%{
         color: red;
-        transform: translateY(-35px);
+        transform: translateY(-30px);
     }
     60%{
         color: green;
@@ -443,5 +444,82 @@ footer{
     100%{
         color: goldenrod;
         transform: translate(0);
+    }
+}
+
+nav .fa-solid{
+    display: none;
+}
+
+
+
+
+@media only screen and (max-width: 600px){
+
+    nav .fa-solid{
+    display: block;
+    font-size: 25px;
+    }
+    nav ul{
+        background: #c28739;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fa-solid{
+        position: absolute;
+        top: 25px;
+        right: 25px;
+        cursor: pointer;
+    }
+
+    .menu{
+        color: #bbb;
+    }
+
+    .headertitle{
+        font-size: 15px;
+    }
+
+    .headertitle span{
+        font-size: 3rem;
+    }
+
+    .col1, .col2{
+        flex-basis: 100%;
+    }
+    .col1, .contact-col1{
+        margin-bottom: 30px;
+    }
+    .col2{
+        font-size: 14px;
+    }
+
+    #Services h2,
+    #about h2,
+    #contact h2{
+        font-size: 2rem;
+    }
+
+    #about h2{
+        margin-bottom: -30px;
+    }
+
+    .col2 h3{
+        margin-bottom: 20px;
+        color: #fff;
+    }
+
+    .contact-col1, .contact-col2{
+        flex-basis: 100%;
     }
 }

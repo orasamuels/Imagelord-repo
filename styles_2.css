@@ -136,7 +136,7 @@ h1 span:hover::after{
         transform: scale(50%, 50%) skewY(30deg);
     }
     100%{
-        top: 40px;
+        top: 85px;
         transform: scale(120%, 120%);
     }
 }
@@ -416,7 +416,7 @@ h1 span:hover::after{
 
 footer{
     background-color: #222;
-    width: var(--WIDTH);
+    /* width: var(--WIDTH); */
     text-align: center;
     padding: 10px;
     font-size: 13px;
@@ -487,11 +487,12 @@ nav .fa-solid{
     }
 
     .headertitle{
-        font-size: 15px;
+        font-size: 16px;
+        
     }
 
     .headertitle span{
-        font-size: 3rem;
+        font-size: 5.5rem;
     }
 
     .col1, .col2{

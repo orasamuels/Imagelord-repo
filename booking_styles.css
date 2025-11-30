@@ -170,7 +170,6 @@ button:hover{
 
 footer{
     background-color: #222;
-    width: var(--WIDTH);
     text-align: center;
     color: #9b8f8f;
     padding: 10px;
